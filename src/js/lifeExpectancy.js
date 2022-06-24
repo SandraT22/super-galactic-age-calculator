@@ -60,8 +60,7 @@ planetaryLifeLeft() {
   let lifeLeft = 0;
   let planetaryAge = planetaryAge();
   if (this.agePlanet === "Mercury"){
-    lifeLeft = this.planetaryExpectancy() - planetaryAge;
+    return planetaryAge;
   }
-  return lifeLeft;
 }
 }
