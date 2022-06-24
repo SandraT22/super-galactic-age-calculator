@@ -1,4 +1,4 @@
-require('path/to/age,js');
+require('path/to/age.js');
 export default class LifeChoices {
   constructor(lifestyle, activityLevel, eatingHabit, agePlanet) {
     this.lifestyle = lifestyle;
