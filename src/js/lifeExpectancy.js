@@ -45,7 +45,9 @@ planetaryExpectancy() {
   const venusExpectancy = this.lifeExpectancy()/.62;
   if (this.planet === "Mercury") {
     planetary += mercuryExpectancy;
-  } el
+  } else if (this.planet === "Venus") {
+    planetary += venusExpectancy;
+  }
   return parseInt(planetary);
 }
 }
