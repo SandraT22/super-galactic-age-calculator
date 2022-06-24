@@ -7,8 +7,7 @@ export default class Age {
   mercuryAge() {
     if (this.planet === "Mercury") {
       let mercuryAge = this.age/.24
-      parseInt(mercuryAge);
-      return mercuryAge;
+      return parseInt(mercuryAge);
     }
   }
 
