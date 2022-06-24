@@ -28,9 +28,10 @@ export default class LifeChoices {
       expectancy -= someActive;
     } else if (this.activityLevel === "Not Active") {
       expectancy -= notActive;
-    } else if (this.eatingHabit === "Healthy") {
+    } 
+    if (this.eatingHabit === "Healthy") {
       expectancy -= healthy;
+    }
     return expectancy;
-  }
 }
 }
