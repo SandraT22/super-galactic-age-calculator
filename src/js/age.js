@@ -12,5 +12,11 @@ export default class Age {
     }
   }
 
-  
+  venusAge() {
+    if (this.planet === "Venus") {
+      let venusAge = this.age/.62
+      parseInt(venusAge);
+      return venusAge;
+    }
+  }
 }
