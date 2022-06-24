@@ -92,7 +92,4 @@ describe("LifeChoices", () => {
     expect(planetaryExpectancy4.planetaryExpectancy()).toEqual(7);  
   });
 
-  test("should correctly subtract the planetary age from the planetary life expectancy", () => {
-    expect(planetaryExpectancy1.planetaryLifeLeft()).toEqual(125);  
-  });
 })
