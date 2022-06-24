@@ -4,17 +4,17 @@ export default class LifeExpectancy {
     this.activityLevel = activityLevel;
     this.eatingHabits = eatingHabits;
   }
-  lifestyle () {
-    let expectancyLifestyle = 100;
+  expectancyLifestyle() {
+    let expectancy = 100;
     let smallTown = 0;
     let rural = 5;
     let city = 10;
     if (this.lifestyle === "Small Town") {
-      return expectancyLifestyle + smallTown;
+      return expectancy + smallTown;
     } else if (this.lifestyle === "Rural") {
-      return expectancyLifestyle - rural;
+      return expectancy - rural;
     } else if (this.lifestyle === "City") {
-      return expectancyLifestyle - city;
+      return expectancy - city;
     }
   }
 }
