@@ -7,10 +7,10 @@ describe("LifeChoices", () => {
   let expectancy4;
 
   beforeEach(() => {
-    expectancy1 = new LifeExpectancy("Small Town", "Active");
-    expectancy2 = new LifeExpectancy("Rural", "Active");
-    expectancy3 = new LifeExpectancy("City", "Active");
-    expectancy4 = new LifeExpectancy("Small Town", "Sometimes Active");
+    expectancy1 = new LifeChoices("Small Town", "Active");
+    expectancy2 = new LifeChoices("Rural", "Active");
+    expectancy3 = new LifeChoices("City", "Active");
+    expectancy4 = new LifeChoices("Small Town", "Sometimes Active");
   })
 
   test("should check that constructor works properly", () => {
