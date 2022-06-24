@@ -17,6 +17,7 @@ describe("LifeChoices", () => {
     expectancy4 = new LifeChoices("Small Town", "Sometimes Active", "Sometimes Healthy");
     expectancy5 = new LifeChoices("Small Town", "Not Active", "Not Healthy");
     expectancy6 = new LifeChoices("Rural", "Sometimes Active", "Sometimes Healthy");
+    expectancy7 = new LifeChoices("Rural", "Not Active", "Not Healthy");
   })
 
   test("should check that constructor works properly", () => {
@@ -49,5 +50,9 @@ describe("LifeChoices", () => {
 
   test("should check that activity level choices alter the life expectancy", () => {
     expect(expectancy6.lifeExpectancy()).toEqual(85);   
+  });
+
+  test("should check that activity level choices alter the life expectancy", () => {
+    expect(expectancy7.lifeExpectancy()).toEqual(75);   
   });
 })
