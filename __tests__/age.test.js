@@ -9,6 +9,6 @@ describe("Age", () => {
   })
 
   test("should check thas constructor works properly", () => {
-    expect(age1).toEqual(30);    
+    expect(age1.age).toEqual(30);    
   });
 });
