@@ -12,16 +12,16 @@ export default class LifeChoices {
     const someActive = 5;
     const notActive = 10;
     if (this.lifestyle === "Small Town") {
-      return expectancy - smallTown;
+      return expectancy -= smallTown;
     } else if (this.lifestyle === "Rural") {
-      return expectancy - rural;
+      return expectancy -= rural;
     } else if (this.lifestyle === "City") {
-      return expectancy - city;
+      return expectancy -= city;
     }
     if (this.activityLevel === "Active") {
-      return expectancy - active;
+      return expectancy -= active;
     } else if (this.activityLevel === "Sometimes Active") {
-      return expectancy - someActive;
+      return expectancy -= someActive;
     }
   }
 }
