@@ -1,4 +1,4 @@
-import Age from './../src/js/age.js';
+import Age from './age.js';
 export default class LifeChoices {
   constructor(lifestyle, activityLevel, eatingHabit, agePlanet) {
     this.lifestyle = lifestyle;
