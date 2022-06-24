@@ -6,6 +6,7 @@ describe("LifeChoices", () => {
   let expectancy3;
   let expectancy4;
   let expectancy5;
+  let expectancy6;
 
   beforeEach(() => {
     expectancy1 = new LifeChoices("Small Town", "Active");
@@ -13,6 +14,7 @@ describe("LifeChoices", () => {
     expectancy3 = new LifeChoices("City", "Active");
     expectancy4 = new LifeChoices("Small Town", "Sometimes Active");
     expectancy5 = new LifeChoices("Small Town", "Not Active");
+    expectancy6 = new LifeChoices("Rural", "Sometimes Active");
   })
 
   test("should check that constructor works properly", () => {
@@ -41,5 +43,9 @@ describe("LifeChoices", () => {
 
   test("should check that activity level choices alter the life expectancy", () => {
     expect(expectancy5.lifeExpectancy()).toEqual(90);   
+  });
+
+  test("should check that activity level choices alter the life expectancy", () => {
+    expect(expectancy6.lifeExpectancy()).toEqual(90);   
   });
 })
