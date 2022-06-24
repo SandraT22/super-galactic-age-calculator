@@ -24,4 +24,11 @@ export default class Age {
       return parseInt(marsAge);
     }
   } 
+
+  jupiterAge() {
+    if (this.planet === "Jupiter") {
+      let jupiterAge = this.age/11.86
+      return parseInt(jupiterAge);
+    }
+  } 
 }
