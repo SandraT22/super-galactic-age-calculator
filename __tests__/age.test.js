@@ -2,6 +2,7 @@ import Age from './../src/js/age.js';
 
 describe("Age", () => {
   let age1;
+  let age2;
 
   beforeEach (() => {
     age1 = new Age(30, "Mercury");
