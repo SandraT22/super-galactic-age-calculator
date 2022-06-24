@@ -1,7 +1,8 @@
 export default class LifeChoices {
-  constructor(lifestyle, activityLevel) {
+  constructor(lifestyle, activityLevel, eatingHabit) {
     this.lifestyle = lifestyle;
     this.activityLevel = activityLevel;
+    this.eatingHabit = eatingHabit;
   }
   lifeExpectancy() {
     let expectancy = 100;
@@ -11,6 +12,9 @@ export default class LifeChoices {
     const active = 0;
     const someActive = 5;
     const notActive = 10;
+    const healthy = 0;
+    const someHealthy = 5;
+    const notHealthy = 10;
     if (this.lifestyle === "Small Town") {
       expectancy -= smallTown;
     } else if (this.lifestyle === "Rural") {
@@ -24,7 +28,9 @@ export default class LifeChoices {
       expectancy -= someActive;
     } else if (this.activityLevel === "Not Active") {
       expectancy -= notActive;
-    }
+    } else if (this.eatingHabit === "Healthy") {
+      expectancy -= healthy;
     return expectancy;
   }
+}
 }
