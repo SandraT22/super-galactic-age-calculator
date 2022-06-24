@@ -1,4 +1,4 @@
-import lifeExpectancy from './../src/js/lifeExpectancy.js';
+import LifeExpectancy from './../src/js/lifeExpectancy.js';
 
 describe("LifeExpectancy", () => {
   let expectancy1;
