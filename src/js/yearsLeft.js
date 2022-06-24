@@ -4,7 +4,7 @@ export default class YearsLeft {
     this.planetaryExpectancy = planetaryExpectancy;
   }
 planetaryLifeLeft() {
-  let yearsLeft = this.planetaryAge - this.planetaryExpectancy;
+  let yearsLeft = this.planetaryExpectancy - this.planetaryAge;
   return yearsLeft;
 }
 }
