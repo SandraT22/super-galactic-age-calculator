@@ -22,6 +22,8 @@ export default class LifeChoices {
       expectancy -= active;
     } else if (this.activityLevel === "Sometimes Active") {
       expectancy -= someActive;
+    } else if (this.activityLevel === "Not Active") {
+      expectancy -= notActive;
     }
     return expectancy;
   }
