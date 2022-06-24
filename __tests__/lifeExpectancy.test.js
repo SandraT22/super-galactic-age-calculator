@@ -12,6 +12,6 @@ describe("LifeExpectancy", () => {
   });
 
   test("should check that lifestyle choices alter the life expectancy", () => {
-    expect(expectancy1.expectancyLifestyle).toEqual(100);   
+    expect(expectancy1.expectancyLifestyle()).toEqual(100);   
   });
 })
