@@ -4,7 +4,7 @@ export default class LifeChoices {
     this.activityLevel = activityLevel;
   }
   lifeExpectancy() {
-    const expectancy = 100;
+    let expectancy = 100;
     const smallTown = 0;
     const rural = 5;
     const city = 10;
