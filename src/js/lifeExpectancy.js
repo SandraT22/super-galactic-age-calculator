@@ -3,12 +3,13 @@ export default class LifeExpectancy {
     this.lifestyle = lifestyle;
   }
   expectancyLifestyle() {
-    let expectancy = 100;
-    let smallTown = 0;
-    let rural = 5;
-    let city = 10;
+    const expectancy = 100;
+    const smallTown = 0;
+    const rural = 5;
+    const city = 10;
     if (this.lifestyle === "Small Town") {
-      return expectancy;
+      let smallTownExpectancy = expectancy - smallTown;
+      return smallTownExpectancyexpectancy;
     } else if (this.lifestyle === "Rural") {
       return expectancy - rural;
     } else if (this.lifestyle === "City") {
