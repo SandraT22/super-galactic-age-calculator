@@ -44,12 +44,15 @@ planetaryExpectancy() {
   const mercuryExpectancy = this.lifeExpectancy()/.24;
   const venusExpectancy = this.lifeExpectancy()/.62;
   const marsExpectancy = this.lifeExpectancy()/1.88;
+  const jupiterExpectancy = this.lifeExpectancy()/11.86;
   if (this.planet === "Mercury") {
     planetary += mercuryExpectancy;
   } else if (this.planet === "Venus") {
     planetary += venusExpectancy;
   } else if (this.planet === "Mars") {
     planetary += marsExpectancy;
+  } else if (this.planet === "Jupiter") {
+    planetary += jupiterExpectancy;
   }
   return parseInt(planetary);
 }
