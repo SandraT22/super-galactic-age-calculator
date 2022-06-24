@@ -17,7 +17,7 @@ export default class Age {
       let jupiterAge = this.age/11.86
       return parseInt(jupiterAge);
     } else {
-      return "Please choose a planet"
+      return "Please enter all information"
     }
   }
 };
