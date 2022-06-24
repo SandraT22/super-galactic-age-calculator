@@ -12,6 +12,8 @@ overage() {
   if (this.planetaryAge >= this.planetaryExpectancy) {
     yearsOver += this.planetaryAge - this.planetaryExpectancy;
     return yearsOver;
+  } else {
+    return "You have years left!"
   }
 }
 }
