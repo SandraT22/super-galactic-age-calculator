@@ -68,7 +68,7 @@ describe("LifeChoices", () => {
     expect(expectancy9.lifeExpectancy()).toEqual(70);   
   });
 
-  test("should check that constructor works properly", () => {
+  test("should correctly convert the earth age espectancy to the mercury life expectancy", () => {
     expect(expectancy1.planetaryExpectancy()).toEqual(416);  
   });
 })
