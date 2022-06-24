@@ -89,6 +89,6 @@ describe("LifeChoices", () => {
   });
 
   test("should correctly convert the earth age espectancy to the mars life expectancy", () => {
-    expect(planetaryExpectancy4.planetaryExpectancy()).toEqual(37);  
+    expect(planetaryExpectancy4.planetaryExpectancy()).toEqual(7);  
   });
 })
