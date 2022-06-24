@@ -4,11 +4,13 @@ describe("Age", () => {
   let age1;
   let age2;
   let age3;
+  let age4;
 
   beforeEach (() => {
     age1 = new Age(30, "Mercury");
     age2 = new Age(30, "Venus");
     age3 = new Age(30, "Mars");
+    age4 = new Age(30, "Jupiter");
   })
 
   test("should check thas constructor works properly", () => {
@@ -25,5 +27,9 @@ test("should correctly convert earth years to mercury years", () => {
 
 test("should correctly convert earth years to mars years", () => {
   expect(age3.marsAge()).toEqual(15);    
+});
+
+test("should correctly convert earth years to jupiter years", () => {
+  expect(age4.jupiterAge()).toEqual(2);    
 });
 });
