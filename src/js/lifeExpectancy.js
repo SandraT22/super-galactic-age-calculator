@@ -1,4 +1,4 @@
-import Age from './../src/js/age.js';
+require('path/to/age,js');
 export default class LifeChoices {
   constructor(lifestyle, activityLevel, eatingHabit, agePlanet) {
     this.lifestyle = lifestyle;
@@ -39,24 +39,24 @@ export default class LifeChoices {
       expectancy -= notHealthy;
     }
     return expectancy;
-}
-planetaryExpectancy() {
-  let planetary = 0;
-  const mercuryExpectancy = this.lifeExpectancy()/.24;
-  const venusExpectancy = this.lifeExpectancy()/.62;
-  const marsExpectancy = this.lifeExpectancy()/1.88;
-  const jupiterExpectancy = this.lifeExpectancy()/11.86;
-  if (this.agePlanet === "Mercury") {
-    planetary += mercuryExpectancy;
-  } else if (this.agePlanet === "Venus") {
-    planetary += venusExpectancy;
-  } else if (this.agePlanet === "Mars") {
-    planetary += marsExpectancy;
-  } else if (this.agePlanet === "Jupiter") {
-    planetary += jupiterExpectancy;
   }
-  return parseInt(planetary);
-}
+  planetaryExpectancy() {
+    let planetary = 0;
+    const mercuryExpectancy = this.lifeExpectancy()/.24;
+    const venusExpectancy = this.lifeExpectancy()/.62;
+    const marsExpectancy = this.lifeExpectancy()/1.88;
+    const jupiterExpectancy = this.lifeExpectancy()/11.86;
+    if (this.agePlanet === "Mercury") {
+      planetary += mercuryExpectancy;
+    } else if (this.agePlanet === "Venus") {
+      planetary += venusExpectancy;
+    } else if (this.agePlanet === "Mars") {
+      planetary += marsExpectancy;
+    } else if (this.agePlanet === "Jupiter") {
+      planetary += jupiterExpectancy;
+    }
+    return parseInt(planetary);
+  }
 planetaryLifeLeft() {
   let lifeLeft = 0;
   let planetaryAge = planetaryAge();
