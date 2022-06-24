@@ -20,7 +20,7 @@ export default class Age {
 
   marsAge() {
     if (this.planet === "Mars") {
-      let marsAge = this.age/.62
+      let marsAge = this.age/1.88
       return parseInt(marsAge);
     }
   } 
