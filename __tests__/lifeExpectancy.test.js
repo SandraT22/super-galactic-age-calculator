@@ -15,7 +15,7 @@ describe("LifeChoices", () => {
     expectancy2 = new LifeChoices("Rural", "Active", "Healthy");
     expectancy3 = new LifeChoices("City", "Active", "Healthy");
     expectancy4 = new LifeChoices("Small Town", "Sometimes Active", "Sometimes Healthy");
-    expectancy5 = new LifeChoices("Small Town", "Not Active", "Healthy");
+    expectancy5 = new LifeChoices("Small Town", "Not Active", "Not Healthy");
     expectancy6 = new LifeChoices("Rural", "Sometimes Active", "Healthy");
   })
 
@@ -44,7 +44,7 @@ describe("LifeChoices", () => {
   });
 
   test("should check that activity level choices alter the life expectancy", () => {
-    expect(expectancy5.lifeExpectancy()).toEqual(90);   
+    expect(expectancy5.lifeExpectancy()).toEqual(80);   
   });
 
   test("should check that activity level choices alter the life expectancy", () => {

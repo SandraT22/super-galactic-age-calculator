@@ -33,7 +33,7 @@ export default class LifeChoices {
       expectancy -= healthy;
     } else if (this.eatingHabit === "Sometimes Healthy") {
       expectancy -= someHealthy;
-    }
+    } 
     return expectancy;
 }
 }
