@@ -27,7 +27,7 @@ describe("LifeChoices", () => {
     expectancy9 = new LifeChoices("City", "Not Active", "Not Healthy");
     planetaryExpectancy1 = new LifeChoices("Small Town", "Active", "Healthy", "Mercury");
     planetaryExpectancy2 = new LifeChoices("Rural", "Sometimes Active", "Sometimes Healthy", "Venus");
-    planetaryExpectancy3 = new LifeChoices("City", "Not Active", "Not Healthy", "venus");
+    planetaryExpectancy3 = new LifeChoices("City", "Not Active", "Not Healthy", "Mars");
   })
 
   test("should check that constructor works properly", () => {
