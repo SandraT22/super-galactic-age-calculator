@@ -5,10 +5,13 @@ describe("Age", () => {
 
   beforeEach (() => {
     age1 = new Age(30);
-    
   })
 
   test("should check thas constructor works properly", () => {
     expect(age1.age).toEqual(30);    
   });
+
+  test("should correctly convert earth years to mercury years", () => {
+    expect(age1.mercuryAge).toEqual(125);    
+});
 });
