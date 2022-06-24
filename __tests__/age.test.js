@@ -18,18 +18,18 @@ describe("Age", () => {
   });
 
   test("should correctly convert earth years to mercury years", () => {
-    expect(age1.mercuryAge()).toEqual(125);    
+    expect(age1.planetaryAge()).toEqual(125);    
 });
 
 test("should correctly convert earth years to mercury years", () => {
-  expect(age2.venusAge()).toEqual(48);    
+  expect(age2.planetaryAge()).toEqual(48);    
 });
 
 test("should correctly convert earth years to mars years", () => {
-  expect(age3.marsAge()).toEqual(15);    
+  expect(age3.planetaryAge()).toEqual(15);    
 });
 
 test("should correctly convert earth years to jupiter years", () => {
-  expect(age4.jupiterAge()).toEqual(2);    
+  expect(age4.planetaryAge()).toEqual(2);    
 });
 });
