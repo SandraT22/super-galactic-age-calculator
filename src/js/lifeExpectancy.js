@@ -1,8 +1,9 @@
 export default class LifeChoices {
-  constructor(lifestyle, activityLevel, eatingHabit) {
+  constructor(lifestyle, activityLevel, eatingHabit, planet) {
     this.lifestyle = lifestyle;
     this.activityLevel = activityLevel;
     this.eatingHabit = eatingHabit;
+    this.planet = planet;
   }
   lifeExpectancy() {
     let expectancy = 100;
@@ -46,5 +47,4 @@ planetaryExpectancy() {
   }
   return parseInt(planetary);
 }
-
 }
