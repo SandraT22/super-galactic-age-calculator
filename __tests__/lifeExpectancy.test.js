@@ -12,4 +12,8 @@ describe("LifeExpectancy", () => {
     expect(expectancy1.activityLevel).toEqual("Active");
     expect(expectancy1.eatingHabits).toEqual("Healthy");   
   });
+
+  test("should check that lifestyle choices alter the life expectancy", () => {
+    expect(expectancy1.expectancyLifestyle).toEqual(100);   
+  });
 })
