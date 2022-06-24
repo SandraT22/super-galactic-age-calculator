@@ -4,7 +4,7 @@ describe("Age", () => {
   let age1;
 
   beforeEach (() => {
-    age1 = new Age(30);
+    age1 = new Age(30, "Mercury");
   })
 
   test("should check thas constructor works properly", () => {
