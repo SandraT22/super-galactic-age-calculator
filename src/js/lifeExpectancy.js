@@ -41,7 +41,7 @@ export default class LifeChoices {
 }
 planetaryExpectancy() {
   let planetary = 0;
-  const mercuryExpectancy = this.lifeExpectancy()/.24;
+  const mercuryExpectancy = lifeExpectancy()/.24;
   if (this.planet === "Mercury") {
     planetary += mercuryExpectancy;
   }
