@@ -12,6 +12,6 @@ describe("Age", () => {
   });
 
   test("should correctly convert earth years to mercury years", () => {
-    expect(age1.mercuryAge).toEqual(125);    
+    expect(age1.mercuryAge()).toEqual(125);    
 });
 });
