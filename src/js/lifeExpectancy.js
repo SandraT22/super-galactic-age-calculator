@@ -1,5 +1,3 @@
-import Age from './../src/js/age.js';
-
 export default class LifeChoices {
   constructor(lifestyle, activityLevel, eatingHabit, agePlanet) {
     this.lifestyle = lifestyle;
@@ -62,7 +60,7 @@ planetaryLifeLeft() {
   let lifeLeft = 0;
   let planetaryAge = planetaryAge();
   if (this.agePlanet === "Mercury"){
-    lifeLeft += planetaryAge;
+    lifeLeft = this.planetaryExpectancy() - planetaryAge;
   }
   return lifeLeft;
 }
