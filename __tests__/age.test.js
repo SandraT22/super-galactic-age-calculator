@@ -5,6 +5,7 @@ describe("Age", () => {
 
   beforeEach (() => {
     age1 = new Age(30, "Mercury");
+    age2 = new Age(30, "Venus");
   })
 
   test("should check thas constructor works properly", () => {
@@ -13,5 +14,9 @@ describe("Age", () => {
 
   test("should correctly convert earth years to mercury years", () => {
     expect(age1.mercuryAge()).toEqual(125);    
+});
+
+test("should correctly convert earth years to mercury years", () => {
+  expect(age2.venusAge()).toEqual(48);    
 });
 });
