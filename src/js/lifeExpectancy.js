@@ -42,9 +42,10 @@ export default class LifeChoices {
 planetaryExpectancy() {
   let planetary = 0;
   const mercuryExpectancy = this.lifeExpectancy()/.24;
+  const venusExpectancy = this.lifeExpectancy()/.62;
   if (this.planet === "Mercury") {
     planetary += mercuryExpectancy;
-  }
+  } el
   return parseInt(planetary);
 }
 }
