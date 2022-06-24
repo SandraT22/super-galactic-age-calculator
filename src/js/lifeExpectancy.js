@@ -8,12 +8,7 @@ export default class LifeExpectancy {
     const rural = 5;
     const city = 10;
     if (this.lifestyle === "Small Town") {
-      let smallTownExpectancy = expectancy - smallTown;
-      return smallTownExpectancyexpectancy;
-    } else if (this.lifestyle === "Rural") {
-      return expectancy - rural;
-    } else if (this.lifestyle === "City") {
-      return expectancy - city;
+      return expectancy;
     }
   }
 }
