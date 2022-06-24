@@ -1,4 +1,4 @@
-require('path/to/age.js');
+import Age from "./age,js";
 export default class LifeChoices {
   constructor(lifestyle, activityLevel, eatingHabit, agePlanet) {
     this.lifestyle = lifestyle;
@@ -59,7 +59,8 @@ export default class LifeChoices {
   }
 planetaryLifeLeft() {
   let lifeLeft = 0;
-  let planetaryAge = planetaryAge();
+  let age = new Age();
+  let planetaryAge = age.planetaryAge();
   if (this.agePlanet === "Mercury"){
     return planetaryAge;
   }
