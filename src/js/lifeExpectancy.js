@@ -1,8 +1,6 @@
 export default class LifeExpectancy {
-  constructor(lifestyle, activityLevel, eatingHabits) {
+  constructor(lifestyle) {
     this.lifestyle = lifestyle;
-    this.activityLevel = activityLevel;
-    this.eatingHabits = eatingHabits;
   }
   expectancyLifestyle() {
     let expectancy = 100;
@@ -10,7 +8,7 @@ export default class LifeExpectancy {
     let rural = 5;
     let city = 10;
     if (this.lifestyle === "Small Town") {
-      return expectancy + smallTown;
+      return expectancy;
     } else if (this.lifestyle === "Rural") {
       return expectancy - rural;
     } else if (this.lifestyle === "City") {
