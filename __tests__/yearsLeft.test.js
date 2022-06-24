@@ -12,4 +12,8 @@ describe("LifeChoices", () => {
   test("should subtract the planetary age and planetary life expectasncy and return the years that the user would have left to live on the planet", () => {
     expect(years1.planetaryLifeLeft()).toEqual(291);  
   });
+
+  test("should subtract the planetary age and planetary life expectasncy and return the years that the user would have left to live on the planet", () => {
+    expect(years1.yearsLeft()).toEqual(291);  
+  });
 });

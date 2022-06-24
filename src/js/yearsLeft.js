@@ -5,6 +5,13 @@ export default class YearsLeft {
   }
 planetaryLifeLeft() {
   let yearsLeft = this.planetaryExpectancy - this.planetaryAge;
-  return yearsLeft;
+ return yearsLeft;
+} 
+overage() {
+  let yearsOver = 0;
+  if (this.planetaryAge >= this.planetaryExpectancy) {
+    yearsOver += this.planetaryAge - this.planetaryExpectancy;
+    return yearsOver;
+  }
 }
 }
