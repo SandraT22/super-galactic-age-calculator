@@ -71,6 +71,6 @@ describe("LifeChoices", () => {
   });
 
   test("should correctly convert the earth age espectancy to the mercury life expectancy", () => {
-    expect(planetaryexpectancy1.planetaryExpectancy()).toEqual(416);  
+    expect(planetaryExpectancy1.planetaryExpectancy()).toEqual(416);  
   });
 })
