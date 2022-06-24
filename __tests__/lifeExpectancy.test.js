@@ -7,14 +7,16 @@ describe("LifeChoices", () => {
   let expectancy4;
   let expectancy5;
   let expectancy6;
+  let expectancy7;
+
 
   beforeEach(() => {
-    expectancy1 = new LifeChoices("Small Town", "Active");
-    expectancy2 = new LifeChoices("Rural", "Active");
-    expectancy3 = new LifeChoices("City", "Active");
-    expectancy4 = new LifeChoices("Small Town", "Sometimes Active");
-    expectancy5 = new LifeChoices("Small Town", "Not Active");
-    expectancy6 = new LifeChoices("Rural", "Sometimes Active");
+    expectancy1 = new LifeChoices("Small Town", "Active", "Healthy");
+    expectancy2 = new LifeChoices("Rural", "Active", "Healthy");
+    expectancy3 = new LifeChoices("City", "Active", "Healthy");
+    expectancy4 = new LifeChoices("Small Town", "Sometimes Active", "Healthy");
+    expectancy5 = new LifeChoices("Small Town", "Not Active", "Healthy");
+    expectancy6 = new LifeChoices("Rural", "Sometimes Active", "Healthy");
   })
 
   test("should check that constructor works properly", () => {
