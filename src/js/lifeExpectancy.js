@@ -44,6 +44,7 @@ planetaryExpectancy() {
   if (this.planet === "Mercury") {
     planetary += mercuryExpectancy;
   }
+  return planetary;
 }
 
 }
