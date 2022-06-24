@@ -35,7 +35,7 @@ test("should correctly convert earth years to jupiter years", () => {
   expect(age4.planetaryAge()).toEqual(2);    
 });
 
-test("should correctly check if prototype returns message if planet is missing", () => {
-  expect(age5.planetaryAge()).toEqual("Please choose a planet");    
+test("should correctly check if prototype returns message if information is missing", () => {
+  expect(age5.planetaryAge()).toEqual("Please enter all information");    
 });
 });
