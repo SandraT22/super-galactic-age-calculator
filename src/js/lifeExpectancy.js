@@ -20,6 +20,8 @@ export default class LifeChoices {
     }
     if (this.activityLevel === "Active") {
       return expectancy - active;
-    } 
+    } else if (this.activityLevel === "Sometimes Active") {
+      return expectancy - someActive;
+    }
   }
 }
