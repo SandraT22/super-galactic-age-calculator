@@ -10,6 +10,7 @@ describe("LifeChoices", () => {
   let expectancy7;
   let expectancy8;
   let expectancy9;
+  let planetaryExpectancy1;
 
 
   beforeEach(() => {
@@ -22,6 +23,7 @@ describe("LifeChoices", () => {
     expectancy7 = new LifeChoices("Rural", "Not Active", "Not Healthy");
     expectancy8 = new LifeChoices("City", "Sometimes Active", "Sometimes Healthy");
     expectancy9 = new LifeChoices("City", "Not Active", "Not Healthy");
+    planetaryExpectancy1 = new LifeChoices("Small Town", "Active", "Healthy", "Mercury");
   })
 
   test("should check that constructor works properly", () => {
@@ -69,6 +71,6 @@ describe("LifeChoices", () => {
   });
 
   test("should correctly convert the earth age espectancy to the mercury life expectancy", () => {
-    expect(expectancy1.planetaryExpectancy()).toEqual(416);  
+    expect(planetaryexpectancy1.planetaryExpectancy()).toEqual(416);  
   });
 })
