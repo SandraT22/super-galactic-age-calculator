@@ -88,11 +88,11 @@ describe("LifeChoices", () => {
     expect(planetaryExpectancy3.planetaryExpectancy()).toEqual(37);  
   });
 
-  test("should correctly convert the earth age espectancy to the mars life expectancy", () => {
+  test("should correctly convert the earth age espectancy to the jupiter life expectancy", () => {
     expect(planetaryExpectancy4.planetaryExpectancy()).toEqual(7);  
   });
 
-  test("should correctly convert the earth age espectancy to the mercury life expectancy", () => {
+  test("should correctly subtract the planetary age from the planetary life expectancy", () => {
     expect(planetaryExpectancy1.planetaryLifeLeft()).toEqual(125);  
   });
 })
