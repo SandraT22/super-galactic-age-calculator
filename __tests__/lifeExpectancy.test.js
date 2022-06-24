@@ -69,6 +69,6 @@ describe("LifeChoices", () => {
   });
 
   test("should check that constructor works properly", () => {
-    expect(expectancy1.planetaryExpectancy).toEqual(416);  
+    expect(expectancy1.planetaryExpectancy()).toEqual(416);  
   });
 })
