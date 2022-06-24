@@ -65,6 +65,6 @@ describe("LifeChoices", () => {
   });
 
   test("should check that activity level choices alter the life expectancy", () => {
-    expect(expectancy8.lifeExpectancy()).toEqual(70);   
+    expect(expectancy9.lifeExpectancy()).toEqual(70);   
   });
 })
