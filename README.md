@@ -1,6 +1,6 @@
-# (Application Name)
+# Syper Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### Website will take user input and return their age on 4 other planets, their life expectancy on those planets, how many years they have left to live on those planets, if they have gone over their life expectancy on those planets and if so by how much. 
 
 #### By Sandra Tena
 
